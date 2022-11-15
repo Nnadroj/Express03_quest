@@ -39,5 +39,11 @@ const userHandlers = require("./userHandlers");
 app.get("/api/users", userHandlers.getUsers);
 app.get("/api/users/:id", userHandlers.getUserById);
 
-///////// POST USERS ////////////////
+///////////////// POST USERS ////////////////
 app.post("/api/users", userHandlers.postUser);
+
+///////////////// PUT MOVIE ////////////////
+app.put("/api/movies/:id", movieHandlers.updateMovie);
+
+///////////////// PUT USERS ////////////////
+app.put("/api/users/:id", userHandlers.updateUser);
